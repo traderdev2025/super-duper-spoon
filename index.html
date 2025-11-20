@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Ramadan — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Mohamed <span>R</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="download" href="/mnt/data/Resume Mohamed Ramadan Mahmoud (1).pdf" target="_blank" rel="noreferrer">Download CV</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Hi, I'm <span>Mohamed Ramadan</span></h1>
+          <p class="lead">Front-End Developer — HTML • CSS • JavaScript • React fundamentals</p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn primary">See My Work</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+
+          <div class="skills-row">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>Responsive</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="portrait-wrap">
+            <img src="imeg/imeg.jpeg" alt="Mohamed Ramadan" id="portrait">
+            <div class="glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-sub">Projects showing responsive design, components, and UI polish.</p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="card" data-title="E-Commerce Store" data-desc="Responsive product listing with filters, product cards, and animations." data-img="proj1.jpg" data-live="#">
+            <div class="card-media">
+              <img src="proj1.jpg" alt="E-Commerce Store">
+            </div>
+            <div class="card-body">
+              <h3>E-Commerce Store</h3>
+              <p>Responsive store UI with product cards and clean UX.</p>
+              <div class="card-footer">
+                <button class="btn outline open-project">View</button>
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card" data-title="Landing Page" data-desc="Multi-section landing page with animations and responsive hero." data-img="proj2.jpg" data-live="#">
+            <div class="card-media"><img src="proj2.jpg" alt="Landing Page"></div>
+            <div class="card-body">
+              <h3>Landing Page</h3>
+              <p>Modern landing with hero and CTAs, fully responsive.</p>
+              <div class="card-footer">
+                <button class="btn outline open-project">View</button>
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card" data-title="Portfolio Website" data-desc="Personal portfolio with project modals, responsive layout and animations." data-img="proj3.jpg" data-live="#">
+            <div class="card-media"><img src="imeg/imeg.jpeg" alt="Portfolio"></div>
+            <div class="card-body">
+              <h3>Portfolio Website</h3>
+              <p>Showcase site with project details and contact section.</p>
+              <div class="card-footer">
+                <button class="btn outline open-project">View</button>
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p><strong> Front-End Developer</strong> with 1 year building responsive interfaces. I focus on clean code, component reusability and performance. I convert Figma/XD designs into pixel-perfect pages and ship projects to GitHub.</p>
+
+            <ul class="info-list">
+              <li><strong>Location:</strong> Ajman, UAE</li>
+              <li><strong>Email:</strong> m9866278@gmail.com</li>
+              <li><strong>Phone:</strong> +20 1094319014 (WhatsApp)</li>
+              <li><strong>Phone:</strong > +97152792135 </li>
+              <li><strong>Languages:</strong> Arabic (Native), English (Good)</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Achievements</h4>
+            <ul>
+              <li>Reusable UI components implemented (navbars, cards, forms).</li>
+              <li>Performance optimizations for faster rendering.</li>
+              <li>Published demos and versioned code on GitHub.</li>
+            </ul>
+            <h4>Skills</h4>
+            <div class="chips">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Flexbox</span><span>Grid</span><span>Responsive</span><span>Git</span><span>Figma (basic)</span><span>React fundamentals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">I'm open to remote & on-site roles. Let's talk.</p>
+
+        <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <div class="form-row">
+            <button class="btn primary" type="submit">Send Message</button>
+            <a class="btn outline" href="/mnt/data/Resume Mohamed Ramadan Mahmoud (1).pdf" download>Download CV</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose" aria-label="Close project">✕</button>
+      <div class="modal-media"><img src="" alt="" id="modalImg"></div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-links">
+          <a class="btn small" href="#" id="modalLive" target="_blank" rel="noreferrer">Live Demo</a>
+          <a class="btn outline" href="#" id="modalCode" target="_blank" rel="noreferrer">View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Mohamed Ramadan — Junior Front-End Developer. Built with passion.</p>
+      <div class="socials">
+        <a href="#" aria-label="Github">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+</html>
